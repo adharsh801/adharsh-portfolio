@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adharsh S - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,23 +12,26 @@
             font-family: 'Poppins', sans-serif;
         }
         body {
-            background: linear-gradient(to right, #ffffff, #e3f2fd);
+            background: linear-gradient(to right, #f8f9fa, #e3e6e8);
             color: #333;
             text-align: center;
-            overflow-x: hidden;
         }
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1000px;
             margin: auto;
         }
         header {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
             padding: 50px 20px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
+            transition: transform 0.3s;
+        }
+        header:hover {
+            transform: scale(1.02);
         }
         .profile-pic {
             width: 150px;
@@ -45,14 +46,13 @@
         h1 {
             font-size: 2.8em;
             margin-top: 15px;
-            font-weight: 600;
         }
         p {
             font-size: 1.2em;
             opacity: 0.8;
         }
         section {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.85);
             padding: 30px;
             margin: 20px 0;
             border-radius: 15px;
@@ -74,15 +74,18 @@
         }
         .btn {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 25px;
             background: #007bff;
             color: white;
-            border-radius: 25px;
-            transition: 0.3s;
-            font-size: 1.1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
         .btn:hover {
             background: #0056b3;
+            transform: scale(1.05);
         }
         footer {
             background: #007bff;
@@ -103,8 +106,7 @@
         </header>
         <section>
             <h2>About Me</h2>
-            <p>I am a passionate Machine Learning Intern and Full-Stack Web Developer with a strong foundation in Python, SQL, and JavaScript. I have experience in AI-driven solutions, data analysis, and scalable web development.</p>
-            <p>Currently pursuing a B.Tech in CSE (AI & ML) at Reva University, I am always eager to explore new opportunities and innovative technologies.</p>
+            <p>I am a passionate Machine Learning Intern and Full-Stack Developer skilled in Python, SQL, and AI-driven solutions. I create impactful, data-driven applications with a strong focus on innovation and problem-solving.</p>
         </section>
         <section>
             <h2>Education</h2>
@@ -113,12 +115,13 @@
         </section>
         <section>
             <h2>Resume</h2>
-            <p><a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" download class="btn">📄 Download My Resume</a></p>
+            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" class="btn" download>📄 Download My Resume</a>
         </section>
         <section>
             <h2>Certificates</h2>
-            <p><a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" download class="btn">🏆 Internship Certificate</a></p>
-            <p><a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" download class="btn">🏅 Training & Project Completion Certificate</a></p>
+            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" class="btn" download>🏆 Internship Certificate</a>
+            <br><br>
+            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" class="btn" download>🏅 Training & Project Completion Certificate</a>
         </section>
         <section>
             <h2>Contact</h2>
