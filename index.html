@@ -5,56 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adharsh S - Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-align: center; }
-        .container { width: 90%; max-width: 800px; margin: auto; padding: 20px; }
-        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-        header { padding: 40px 0; }
-        header h1 { font-size: 2.5em; }
-        .profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; }
-        section { margin: 20px 0; padding: 20px; }
-        h2 { color: #ffeb3b; }
-        p { font-size: 1.1em; }
-        a { display: inline-block; margin: 10px; padding: 10px 15px; color: white; background: #ff9800; border-radius: 8px; text-decoration: none; transition: 0.3s; }
-        a:hover { background: #f57c00; transform: scale(1.05); }
-        footer { padding: 15px; background: rgba(0,0,0,0.2); border-radius: 15px; margin-top: 20px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(to right, #eef2f3, #ffffff);
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 50px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #007bff;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        footer {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="profile.jpg" alt="Adharsh S" class="profile-pic">
-        <h1>Adharsh S</h1>
-        <p>Machine Learning Intern | Full-Stack Web Developer</p>
-    </header>
     <div class="container">
-        <section class="glass">
+        <header>
+            <img src="profile.jpg" alt="Adharsh S" class="profile-pic">
+            <h1>Adharsh S</h1>
+            <p>Machine Learning Intern | Full-Stack Web Developer</p>
+        </header>
+        <section>
             <h2>About Me</h2>
-            <p>Passionate Machine Learning Intern with expertise in Python, data analysis, and full-stack web development.</p>
+            <p>Dynamic and innovative Machine Learning Intern with expertise in Python, data analysis, and full-stack web development.</p>
         </section>
-        <section class="glass">
+        <section>
             <h2>Education</h2>
             <p><strong>B.Tech in CSE (AI & ML)</strong> - Reva University (Dec 2023 – Present)</p>
             <p><strong>Diploma in CSE</strong> - Acharya Institute of Technology (Dec 2020 – June 2023)</p>
         </section>
-        <section class="glass">
+        <section>
             <h2>Resume</h2>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" download>Download My Resume</a>
+            <p><a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" download>📄 Download My Resume</a></p>
         </section>
-        <section class="glass">
+        <section>
             <h2>Certificates</h2>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" download>🏆 Internship Certificate</a>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" download>🏅 Training & Project Certificate</a>
+            <p><a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" download>🏆 Internship Certificate</a></p>
+            <p><a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" download>🏅 Training & Project Completion Certificate</a></p>
         </section>
-        <section class="glass">
+        <section>
             <h2>Contact</h2>
             <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
             <p>Phone: 📞 8618819517</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
         </section>
+        <footer>
+            <p>© 2025 Adharsh S | All Rights Reserved</p>
+        </footer>
     </div>
-    <footer>
-        <p>© 2025 Adharsh S | All Rights Reserved</p>
-    </footer>
 </body>
 </html>
