@@ -7,54 +7,54 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; text-align: center; padding: 20px; }
-        .container { max-width: 900px; margin: auto; }
-        header { background: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 20px; }
-        .profile-pic { width: 160px; height: 160px; border-radius: 50%; border: 5px solid #fff; }
-        h1 { font-size: 2.5em; margin: 10px 0; }
-        p { font-size: 1.1em; opacity: 0.9; }
-        section { background: rgba(255, 255, 255, 0.2); padding: 20px; margin: 20px 0; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-        a { color: #fff; text-decoration: none; font-weight: bold; padding: 10px 20px; border-radius: 5px; display: inline-block; transition: 0.3s; }
-        .btn { background: rgba(255, 255, 255, 0.3); }
-        .btn:hover { background: rgba(255, 255, 255, 0.5); }
-        footer { margin-top: 20px; padding: 15px; background: rgba(0, 0, 0, 0.3); border-radius: 20px; }
+        body { background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-align: center; }
+        .container { width: 90%; max-width: 800px; margin: auto; padding: 20px; }
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        header { padding: 40px 0; }
+        header h1 { font-size: 2.5em; }
+        .profile-pic { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; }
+        section { margin: 20px 0; padding: 20px; }
+        h2 { color: #ffeb3b; }
+        p { font-size: 1.1em; }
+        a { display: inline-block; margin: 10px; padding: 10px 15px; color: white; background: #ff9800; border-radius: 8px; text-decoration: none; transition: 0.3s; }
+        a:hover { background: #f57c00; transform: scale(1.05); }
+        footer { padding: 15px; background: rgba(0,0,0,0.2); border-radius: 15px; margin-top: 20px; }
     </style>
 </head>
 <body>
+    <header>
+        <img src="profile.jpg" alt="Adharsh S" class="profile-pic">
+        <h1>Adharsh S</h1>
+        <p>Machine Learning Intern | Full-Stack Web Developer</p>
+    </header>
     <div class="container">
-        <header>
-            <img src="profile.jpg" alt="Adharsh S" class="profile-pic">
-            <h1>Adharsh S</h1>
-            <p>Machine Learning Intern | Full-Stack Web Developer</p>
-        </header>
-        <section>
+        <section class="glass">
             <h2>About Me</h2>
-            <p>Dynamic and innovative Machine Learning Intern with expertise in Python, data analysis, and full-stack web development.</p>
+            <p>Passionate Machine Learning Intern with expertise in Python, data analysis, and full-stack web development.</p>
         </section>
-        <section>
+        <section class="glass">
             <h2>Education</h2>
             <p><strong>B.Tech in CSE (AI & ML)</strong> - Reva University (Dec 2023 – Present)</p>
             <p><strong>Diploma in CSE</strong> - Acharya Institute of Technology (Dec 2020 – June 2023)</p>
         </section>
-        <section>
+        <section class="glass">
             <h2>Resume</h2>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" class="btn" download>📄 Download My Resume</a>
+            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" download>Download My Resume</a>
         </section>
-        <section>
+        <section class="glass">
             <h2>Certificates</h2>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" class="btn" download>🏆 Internship Certificate</a>
-            <br><br>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" class="btn" download>🏅 Training & Project Completion Certificate</a>
+            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" download>🏆 Internship Certificate</a>
+            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" download>🏅 Training & Project Certificate</a>
         </section>
-        <section>
+        <section class="glass">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:adharshs801@gmail.com" class="btn">📧 adharshs801@gmail.com</a></p>
+            <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
             <p>Phone: 📞 8618819517</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" class="btn" target="_blank">🔗 My LinkedIn</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
         </section>
-        <footer>
-            <p>© 2025 Adharsh S | All Rights Reserved</p>
-        </footer>
     </div>
+    <footer>
+        <p>© 2025 Adharsh S | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
