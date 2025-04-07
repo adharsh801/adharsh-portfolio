@@ -114,44 +114,40 @@
             font-size: 1.1em;
         }
 
-        /* Skills Section */
         .skills-section {
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
             padding: 30px 0;
-            text-align: left;
-            margin: 0 auto;
-            max-width: 300px; /* Keep the skills section narrow */
         }
 
         .skills-item {
-            padding: 12px 20px; /* Small padding */
-            margin: 10px 0;
-            background-color: #ffffff;
+            width: 150px;
+            padding: 20px;
             border-radius: 15px;
+            background-color: #ffffff;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            font-size: 1.2em;
-            color: #000;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .skills-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .skills-item i {
-            font-size: 2.5em;
+            font-size: 3em;
             color: #007bff;
             margin-bottom: 10px;
         }
 
         .skills-item h3 {
-            font-size: 1.4em;
+            font-size: 1.2em;
             font-weight: 700;
             color: #000;
         }
-
     </style>
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -176,35 +172,35 @@
             <div class="skills-section">
                 <div class="skills-item">
                     <i class="fab fa-python"></i>
-                    <h3>Python 🐍</h3>
+                    <h3>Python</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fab fa-html5"></i>
-                    <h3>HTML & CSS 🌐</h3>
+                    <h3>HTML & CSS</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fab fa-js"></i>
-                    <h3>JavaScript 💻</h3>
+                    <h3>JavaScript</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fas fa-database"></i>
-                    <h3>SQL 🔣</h3>
+                    <h3>SQL</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fab fa-php"></i>
-                    <h3>PHP ⚙️</h3>
+                    <h3>PHP</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Excel 📊</h3>
+                    <h3>Excel</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fas fa-table"></i>
-                    <h3>Tableau 📈</h3>
+                    <h3>Tableau</h3>
                 </div>
                 <div class="skills-item">
                     <i class="fas fa-laptop-code"></i>
-                    <h3>Machine Learning 🤖</h3>
+                    <h3>Machine Learning</h3>
                 </div>
             </div>
         </section>
