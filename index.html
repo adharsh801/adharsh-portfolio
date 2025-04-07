@@ -128,16 +128,15 @@
 
         /* Skills Section */
         .skills-section {
-            display: block;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* This allows items to wrap onto the next line if needed */
+            gap: 20px; /* Space between each skill item */
             padding: 30px 0;
-            text-align: left;
-            margin: 0 auto;
-            max-width: 300px; /* Keep the skills section narrow */
         }
 
         .skills-item {
             padding: 12px 20px; /* Small padding */
-            margin: 10px 0;
             background-color: #ffffff;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -145,6 +144,7 @@
             font-size: 1.2em;
             color: #000;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 150px; /* Ensure minimum width for each item */
         }
 
         .skills-item:hover {
