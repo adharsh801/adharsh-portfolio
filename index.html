@@ -29,27 +29,28 @@
 
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1000px;
             margin: auto;
             padding-top: 30px;
         }
 
         header {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
             padding: 50px 20px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            color: #222;
         }
 
         header:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .profile-pic {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             border: 5px solid #007bff;
             transition: transform 0.3s ease-in-out;
@@ -60,43 +61,31 @@
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.8em;
             margin-top: 15px;
             font-weight: 700;
-            color: #fff;
+            color: #222;
         }
 
         p {
-            font-size: 1.1em;
-            opacity: 0.85;
-            color: #fff;
+            font-size: 1.2em;
+            opacity: 0.9;
+            color: #222;
         }
 
         section {
-            background: rgba(255, 255, 255, 0.15);
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
             padding: 30px;
             margin: 20px 0;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease-in-out;
             backdrop-filter: blur(15px);
-            color: #fff;
+            color: #222;
         }
 
         section:hover {
             transform: translateY(-5px);
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #007bff;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 10px;
-            color: #ff5722;
         }
 
         a {
@@ -116,7 +105,7 @@
             padding: 12px 25px;
             background: #007bff;
             color: white;
-            border-radius: 30px;
+            border-radius: 25px;
             transition: 0.3s;
             font-size: 1.1em;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -129,7 +118,7 @@
         }
 
         footer {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3);
             color: white;
             padding: 20px;
             margin-top: 30px;
@@ -140,37 +129,12 @@
         .skills-list {
             list-style-type: none;
             padding: 0;
-            font-size: 1.2em;
+            text-align: left;
         }
 
         .skills-list li {
+            font-size: 1.2em;
             margin: 10px 0;
-            padding: 8px;
-            background: rgba(0, 123, 255, 0.2);
-            border-radius: 5px;
-            display: inline-block;
-            margin-right: 15px;
-            color: #007bff;
-            transition: background 0.3s ease-in-out;
-        }
-
-        .skills-list li:hover {
-            background: rgba(0, 123, 255, 0.5);
-            color: white;
-        }
-
-        .contact-info p {
-            margin: 10px 0;
-        }
-
-        .contact-info a {
-            color: #ff5722;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .contact-info a:hover {
-            color: #007bff;
         }
     </style>
 </head>
@@ -181,39 +145,39 @@
             <h1>Adharsh S</h1>
             <p>Machine Learning Intern | Full-Stack Web Developer Intern</p>
         </header>
+        
         <section>
             <h2>About Me</h2>
             <p>I am a Machine Learning Intern & Full-Stack Web Developer with expertise in Python, SQL, JavaScript, and AI-driven solutions. Passionate about data analysis, web development, and scalable AI applications, I bridge the gap between technology and innovation.</p>
             <p>Interned at Qbits Learning & Parvam Software Solutions, working on ML models, data processing, and full-stack projects. Currently pursuing B.Tech in CSE (AI & ML) at Reva University, constantly learning and adapting to emerging tech.</p>
-            <h3>💡 Key Strengths:</h3>
-            <p>✔ Machine Learning & Data Analysis</p>
-            <p>✔ Full-Stack Web Development</p>
-            <p>✔ AI-Powered Solutions & Predictive Modeling</p>
-            <p>✔ Problem-Solving & Innovation</p>
         </section>
+        
         <section>
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>Machine Learning</li>
-                <li>Python</li>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Basic Java</li>
-                <li>Excel</li>
-                <li>Tableau (Basic)</li>
-                <li>SQL</li>
-                <li>PHP</li>
+                <li>🤖 Machine Learning</li>
+                <li>🐍 Python</li>
+                <li>🌐 HTML & CSS</li>
+                <li>💻 JavaScript</li>
+                <li>☕ Java (Basic)</li>
+                <li>📊 Excel</li>
+                <li>📈 Tableau (Basic)</li>
+                <li>🔣 SQL</li>
+                <li>⚙️ PHP</li>
             </ul>
         </section>
+
         <section>
             <h2>Education</h2>
             <p><strong>B.Tech in CSE (AI & ML)</strong> - Reva University (Dec 2023 – Present)</p>
             <p><strong>Diploma in CSE</strong> - Acharya Institute of Technology (Dec 2020 – June 2023)</p>
         </section>
+        
         <section>
             <h2>Resume</h2>
             <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" class="btn" download>📄 Download My Resume</a>
         </section>
+
         <section>
             <h2>Certificates</h2>
             <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" class="btn" download>🏆 Internship Certificate</a>
@@ -222,14 +186,14 @@
             <br><br>
             <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/Adharsh_S_Data_Science_Certificate.pdf" class="btn" download>📜 Data Science Internship Certificate</a>
         </section>
+
         <section>
             <h2>Contact</h2>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
-                <p>Phone: 📞 8618819517</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
-            </div>
+            <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
+            <p>Phone: 📞 8618819517</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
         </section>
+
         <footer>
             <p>© 2025 Adharsh S | All Rights Reserved</p>
         </footer>
