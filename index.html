@@ -11,110 +11,166 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
+
         body {
             background: linear-gradient(45deg, #6a11cb, #2575fc, #fad0c4, #8ec5fc, #a6c1ee);
             background-size: 300% 300%;
-            animation: gradientAnimation 10s ease infinite;
+            animation: gradientAnimation 15s ease infinite;
             color: #222;
             text-align: center;
+            line-height: 1.6;
         }
+
         @keyframes gradientAnimation {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
         .container {
             width: 90%;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
             padding-top: 30px;
         }
+
         header {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             padding: 50px 20px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            color: #222;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
         }
+
         header:hover {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
+
         .profile-pic {
-            width: 160px;
-            height: 160px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             border: 5px solid #007bff;
             transition: transform 0.3s ease-in-out;
         }
+
         .profile-pic:hover {
             transform: scale(1.1);
         }
+
         h1 {
-            font-size: 2.8em;
+            font-size: 3em;
             margin-top: 15px;
             font-weight: 700;
-            color: #222;
+            color: #fff;
         }
+
         p {
-            font-size: 1.2em;
-            opacity: 0.9;
-            color: #222;
+            font-size: 1.1em;
+            opacity: 0.85;
+            color: #fff;
         }
+
         section {
-            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            background: rgba(255, 255, 255, 0.15);
             padding: 30px;
             margin: 20px 0;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease-in-out;
             backdrop-filter: blur(15px);
-            color: #222;
+            color: #fff;
         }
+
         section:hover {
             transform: translateY(-5px);
         }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #ff5722;
+        }
+
         a {
             color: #007bff;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
+
         a:hover {
             color: #ff5722;
             text-decoration: underline;
         }
+
         .btn {
             display: inline-block;
             padding: 12px 25px;
             background: #007bff;
             color: white;
-            border-radius: 25px;
+            border-radius: 30px;
             transition: 0.3s;
             font-size: 1.1em;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
         .btn:hover {
             background: #ff5722;
             color: white;
             transform: scale(1.05);
         }
+
         footer {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.5);
             color: white;
             padding: 20px;
             margin-top: 30px;
             border-radius: 10px;
             font-size: 1.1em;
         }
+
         .skills-list {
             list-style-type: none;
             padding: 0;
-        }
-        .skills-list li {
             font-size: 1.2em;
-            margin: 5px 0;
+        }
+
+        .skills-list li {
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(0, 123, 255, 0.2);
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 15px;
+            color: #007bff;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .skills-list li:hover {
+            background: rgba(0, 123, 255, 0.5);
+            color: white;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #ff5722;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #007bff;
         }
     </style>
 </head>
@@ -138,15 +194,15 @@
         <section>
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>✔ Machine Learning</li>
-                <li>✔ Python</li>
-                <li>✔ HTML & CSS</li>
-                <li>✔ JavaScript</li>
-                <li>✔ Basic Java</li>
-                <li>✔ Excel</li>
-                <li>✔ Tableau (Basic)</li>
-                <li>✔ SQL</li>
-                <li>✔ PHP</li>
+                <li>Machine Learning</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Basic Java</li>
+                <li>Excel</li>
+                <li>Tableau (Basic)</li>
+                <li>SQL</li>
+                <li>PHP</li>
             </ul>
         </section>
         <section>
@@ -164,14 +220,15 @@
             <br><br>
             <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" class="btn" download>🏅 Training & Project Completion Certificate</a>
             <br><br>
-            <!-- New Internship Certificate -->
             <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/Adharsh_S_Data_Science_Certificate.pdf" class="btn" download>📜 Data Science Internship Certificate</a>
         </section>
         <section>
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
-            <p>Phone: 📞 8618819517</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
+                <p>Phone: 📞 8618819517</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
+            </div>
         </section>
         <footer>
             <p>© 2025 Adharsh S | All Rights Reserved</p>
