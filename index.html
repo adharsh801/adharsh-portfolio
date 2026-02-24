@@ -1,245 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adharsh S - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background: linear-gradient(45deg, #6a11cb, #2575fc, #fad0c4, #8ec5fc, #a6c1ee);
-            background-size: 300% 300%;
-            animation: gradientAnimation 10s ease infinite;
-            color: #222;
-            text-align: center;
-        }
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            padding-top: 30px;
-        }
-        header {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 50px 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            color: #222;
-        }
-        header:hover {
-            transform: scale(1.03);
-        }
-        .profile-pic {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 5px solid #007bff;
-            transition: transform 0.3s ease-in-out;
-        }
-        .profile-pic:hover {
-            transform: scale(1.1);
-        }
-        h1 {
-            font-size: 2.8em;
-            margin-top: 15px;
-            font-weight: 700;
-            color: #222;
-        }
-        p {
-            font-size: 1.2em;
-            opacity: 0.9;
-            color: #222;
-        }
-        section {
-            background: linear-gradient(135deg, #ffffff, #f8f9fa);
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-            backdrop-filter: blur(15px);
-            color: #222;
-        }
-        section:hover {
-            transform: translateY(-5px);
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        a:hover {
-            color: #ff5722;
-            text-decoration: underline;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #007bff;
-            color: white;
-            border-radius: 25px;
-            transition: 0.3s;
-            font-size: 1.1em;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .btn:hover {
-            background: #ff5722;
-            color: white;
-            transform: scale(1.05);
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.3);
-            color: white;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 10px;
-            font-size: 1.1em;
-        }
-        /* Skills Section Styling */
-        .skills-section {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap; /* This allows items to wrap onto the next line if needed */
-            gap: 20px; /* Space between each skill item */
-            padding: 30px 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .skills-item {
-            padding: 12px 20px; /* Small padding */
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-size: 1.2em;
-            color: #000;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            min-width: 150px; /* Ensure minimum width for each item */
-        }
+<title>Adharsh S | AI & Full Stack Developer</title>
 
-        .skills-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        .skills-item i {
-            font-size: 2.5em;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        .skills-item h3 {
-            font-size: 1.4em;
-            font-weight: 700;
-            color: #000;
-        }
-    </style>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#6a11cb,#2575fc,#8ec5fc,#e0c3fc);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
+color:#222;
+
+}
+
+@keyframes gradient{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
+
+/* hero */
+
+.hero{
+
+text-align:center;
+padding:80px 20px;
+
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(15px);
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.2);
+
+}
+
+.profile{
+
+width:160px;
+border-radius:50%;
+border:5px solid #007bff;
+margin-bottom:20px;
+
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero span{
+color:#007bff;
+}
+
+.typing{
+margin-top:10px;
+font-size:20px;
+}
+
+/* sections */
+
+section{
+
+margin-top:40px;
+
+background:rgba(255,255,255,0.85);
+padding:40px;
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+transition:.3s;
+
+}
+
+section:hover{
+transform:translateY(-5px);
+}
+
+h2{
+margin-bottom:20px;
+}
+
+/* skills */
+
+.skill{
+margin:15px 0;
+}
+
+.bar{
+
+background:#ddd;
+height:10px;
+border-radius:20px;
+}
+
+.progress{
+
+height:10px;
+border-radius:20px;
+
+}
+
+.python{width:90%;background:#3776AB;}
+.html{width:90%;background:#e34c26;}
+.js{width:80%;background:#f7df1e;}
+.sql{width:80%;background:#00758f;}
+.ml{width:85%;background:#6f42c1;}
+
+/* projects */
+
+.projects{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+transition:.3s;
+
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* buttons */
+
+.btn{
+
+display:inline-block;
+margin-top:15px;
+
+padding:12px 25px;
+
+background:#007bff;
+color:white;
+
+border-radius:30px;
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#ff5722;
+
+}
+
+/* contact */
+
+.contact a{
+
+color:#007bff;
+text-decoration:none;
+
+}
+
+/* social */
+
+.social{
+
+position:fixed;
+top:50%;
+left:15px;
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.social a{
+
+background:white;
+padding:10px;
+border-radius:50%;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+/* dark mode */
+
+.dark{
+
+background:#0f0f0f;
+color:white;
+
+}
+
+.dark section{
+background:#1e1e1e;
+}
+
+/* toggle */
+
+.toggle{
+
+position:fixed;
+top:20px;
+right:20px;
+
+background:white;
+border:none;
+padding:10px 15px;
+border-radius:30px;
+cursor:pointer;
+
+}
+
+/* footer */
+
+footer{
+
+text-align:center;
+margin-top:40px;
+padding:20px;
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="profile.jpg" alt="Adharsh S" class="profile-pic">
-            <h1>Adharsh S</h1>
-            <p>Machine Learning Intern | Full-Stack Web Developer Intern</p>
-        </header>
 
-        <section>
-            <h2>About Me</h2>
-            <p>I am a Machine Learning Intern & Full-Stack Web Developer with expertise in Python, SQL, JavaScript, and AI-driven solutions. Passionate about data analysis, web development, and scalable AI applications, I bridge the gap between technology and innovation.</p>
-            <p>Interned at Qbits Learning & Parvam Software Solutions, working on ML models, data processing, and full-stack projects. Currently pursuing B.Tech in CSE (AI & ML) at Reva University, constantly learning and adapting to emerging tech.</p>
-            <h3>💡 Key Strengths:</h3>
-            <p>✔ Machine Learning & Data Analysis</p>
-            <p>✔ Full-Stack Web Development</p>
-            <p>✔ AI-Powered Solutions & Predictive Modeling</p>
-            <p>✔ Problem-Solving & Innovation</p>
-        </section>
+<button class="toggle" onclick="darkMode()">🌙</button>
 
-        <section>
-            <h2>Education</h2>
-            <p><strong>B.Tech in CSE (AI & ML)</strong> - Reva University (Dec 2023 – Present)</p>
-            <p><strong>Diploma in CSE</strong> - Acharya Institute of Technology (Dec 2020 – June 2023)</p>
-        </section>
+<div class="social">
 
-        <!-- Skills Section -->
-        <section>
-            <h2>Skills</h2>
-            <div class="skills-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Machine Learning 🤖</h3>
-                </div>
-            <div class="skills-section">
-                <div class="skills-item">
-                    <i class="fab fa-python"></i>
-                    <h3>Python 🐍</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML & CSS 🌐</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript 💻</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Java Intermediate ☕</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL 🔣</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP ⚙️</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Excel 📊</h3>
-                </div>
-                <div class="skills-item">
-                    <i class="fas fa-table"></i>
-                    <h3>Tableau(Basic) 📈</h3>
-                </div>
-            </div>
-        </section>
+<a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
 
-        <section>
-            <h2>Resume</h2>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" class="btn" download>📄 Download My Resume</a>
-        </section>
+<a href="https://github.com"><i class="fab fa-github"></i></a>
 
-        <section>
-            <h2>Certificates</h2>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" class="btn" download>🏆 Internship Certificate</a>
-            <br><br>
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" class="btn" download>🏅 Training & Project Completion Certificate</a>
-            <br><br>
-            <!-- New Internship Certificate -->
-            <a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/Adharsh_S_Data_Science_Certificate.pdf" class="btn" download>📜 Data Science Internship Certificate</a>
-        </section>
+<a href="mailto:adharshs801@gmail.com"><i class="fas fa-envelope"></i></a>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:adharshs801@gmail.com">📧 adharshs801@gmail.com</a></p>
-            <p>Phone: 📞 +91 8618819517</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/adharsh-s-325714240" target="_blank">🔗 My LinkedIn</a></p>
-        </section>
+</div>
 
-        <footer>
-            <p>© 2025 Adharsh S | All Rights Reserved</p>
-        </footer>
-    </div>
+<div class="container">
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="profile.jpg" class="profile">
+
+<h1>Hi I'm <span>Adharsh S</span></h1>
+
+<p class="typing"></p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</div>
+
+<!-- ABOUT -->
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+
+Machine Learning Intern and Full Stack Developer passionate about AI, data science and scalable web applications.
+
+I specialize in Python, ML models, web development and data analysis.
+
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section>
+
+<h2>Skills</h2>
+
+<div class="skill">Python
+<div class="bar"><div class="progress python"></div></div>
+</div>
+
+<div class="skill">HTML / CSS
+<div class="bar"><div class="progress html"></div></div>
+</div>
+
+<div class="skill">JavaScript
+<div class="bar"><div class="progress js"></div></div>
+</div>
+
+<div class="skill">SQL
+<div class="bar"><div class="progress sql"></div></div>
+</div>
+
+<div class="skill">Machine Learning
+<div class="bar"><div class="progress ml"></div></div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>AI Stock Predictor</h3>
+
+<p>Machine learning model predicting stock trends using Python and data analysis.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>Modern responsive portfolio using HTML CSS JavaScript.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Data Visualization</h3>
+
+<p>Interactive dashboards using Excel and Tableau.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RESUME -->
+
+<section>
+
+<h2>Resume</h2>
+
+<a class="btn"
+href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf">
+
+Download Resume
+
+</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email:
+<a href="mailto:adharshs801@gmail.com">
+adharshs801@gmail.com
+</a>
+</p>
+
+<p>Phone: +91 8618819517</p>
+
+<p>
+
+LinkedIn:
+<a href="https://linkedin.com/in/adharsh-s-325714240">
+
+View Profile
+
+</a>
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Adharsh S | Portfolio
+
+</footer>
+
+</div>
+
+<script>
+
+/* typing animation */
+
+const text="Machine Learning Engineer | AI Developer | Full Stack Developer";
+
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.querySelector(".typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,50);
+
+}
+
+}
+
+typing();
+
+/* dark mode */
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+</script>
+
 </body>
 </html>
