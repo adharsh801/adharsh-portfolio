@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adharsh S | AI Engineer</title>
+<title>Adharsh S | AI Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
 <style>
 
@@ -23,315 +22,237 @@ box-sizing:border-box;
 }
 
 body{
-
 font-family:'Poppins',sans-serif;
 background:#050510;
 color:white;
 overflow-x:hidden;
-
 }
 
-/* PARTICLE BACKGROUND */
+/* scroll progress */
 
-#particles-js{
-
+#progress{
 position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
-
+top:0;
+left:0;
+height:4px;
+background:#00ffff;
+width:0%;
+z-index:1000;
 }
 
-/* CURSOR GLOW */
+/* cursor glow */
 
 .cursor{
-
 width:20px;
 height:20px;
-
-border-radius:50%;
-
 background:#00ffff;
-
+border-radius:50%;
 position:fixed;
-
 pointer-events:none;
-
 filter:blur(6px);
-
+z-index:999;
 }
 
-/* HERO */
+/* container */
 
-.hero{
+.container{
+width:90%;
+max-width:1000px;
+margin:auto;
+padding-top:40px;
+}
 
-height:100vh;
+/* header */
 
-display:flex;
-flex-direction:column;
-
-justify-content:center;
-align-items:center;
-
+header{
 text-align:center;
-
+padding:60px 20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
 }
 
-.hero h1{
+.profile-pic{
+width:160px;
+height:160px;
+border-radius:50%;
+border:4px solid #00ffff;
+margin-bottom:15px;
+}
 
+header h1{
 font-family:'Orbitron';
-
-font-size:60px;
-
+font-size:40px;
 }
 
-.hero span{
-
+header span{
 color:#00ffff;
-
 }
 
 .typing{
-
-margin-top:20px;
-
-font-size:22px;
-
+margin-top:10px;
 color:#aaa;
-
 }
 
-.btn{
-
-margin-top:25px;
-
-padding:12px 30px;
-
-background:#00ffff;
-
-border-radius:30px;
-
-text-decoration:none;
-
-color:black;
-
-font-weight:600;
-
-}
-
-/* SECTIONS */
+/* sections */
 
 section{
-
-width:85%;
-max-width:1100px;
-
-margin:80px auto;
-
-padding:40px;
-
-border-radius:20px;
-
+margin-top:40px;
+padding:35px;
 background:rgba(255,255,255,0.05);
-
-backdrop-filter:blur(20px);
-
+border-radius:20px;
 border:1px solid rgba(255,255,255,0.1);
-
+backdrop-filter:blur(20px);
 opacity:0;
-
 transform:translateY(40px);
-
-transition:0.6s;
-
+transition:0.8s;
 }
 
 section.show{
-
 opacity:1;
-
 transform:translateY(0);
-
 }
 
 h2{
-
 font-family:'Orbitron';
-
 margin-bottom:20px;
-
 color:#00ffff;
-
 }
 
-/* SKILLS */
+/* skills */
 
 .skill{
-
 margin:15px 0;
-
 }
 
 .bar{
-
-height:8px;
-
 background:#333;
-
-border-radius:10px;
-
+height:10px;
+border-radius:20px;
 }
 
 .progress{
-
-height:8px;
-
-border-radius:10px;
-
+height:10px;
+border-radius:20px;
 }
 
 .python{width:90%;background:#00ffff;}
+.html{width:85%;background:#ff5733;}
 .js{width:80%;background:#f7df1e;}
-.html{width:90%;background:#ff5733;}
+.sql{width:85%;background:#3498db;}
 .ml{width:85%;background:#8e44ad;}
 
-/* PROJECTS */
+/* project cards */
 
 .projects{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
+gap:20px;
 }
 
 .card{
-
 background:rgba(255,255,255,0.05);
-
-border-radius:20px;
-
 padding:20px;
-
-border:1px solid rgba(255,255,255,0.1);
-
-}
-
-.card img{
-
-width:100%;
-
 border-radius:15px;
-
-margin-bottom:10px;
-
+transition:0.3s;
 }
 
-/* CONTACT */
-
-form{
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(0,255,255,0.3);
 }
 
-input,textarea{
+/* buttons */
 
-padding:12px;
-
-border-radius:10px;
-
-border:none;
-
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+background:#00ffff;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
 }
 
-/* FOOTER */
+/* footer */
 
 footer{
-
 text-align:center;
-
-margin:40px;
-
+margin-top:40px;
 color:#aaa;
-
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div id="particles-js"></div>
-
+<div id="progress"></div>
 <div class="cursor"></div>
 
-<!-- HERO -->
+<div class="container">
 
-<div class="hero">
+<header>
+
+<img src="profile.jpg" class="profile-pic">
 
 <h1>Adharsh <span>S</span></h1>
 
 <p class="typing"></p>
 
-<a href="#contact" class="btn">Hire Me</a>
+<a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/resume.pdf" class="btn">
+Download Resume
+</a>
 
-</div>
-
-<!-- ABOUT -->
+</header>
 
 <section>
 
 <h2>About Me</h2>
 
 <p>
-
-Machine Learning Engineer passionate about artificial intelligence, data science, and building scalable intelligent systems.
-
+Machine Learning Intern and Full Stack Developer skilled in Python, SQL, JavaScript and AI-driven solutions. 
+Passionate about data analysis, web development and scalable AI applications.
 </p>
 
 </section>
 
-<!-- SKILLS -->
+<section>
+
+<h2>Education</h2>
+
+<p><b>B.Tech CSE (AI & ML)</b> — Reva University (2023 – Present)</p>
+<p><b>Diploma CSE</b> — Acharya Institute of Technology (2020 – 2023)</p>
+
+</section>
 
 <section>
 
 <h2>Skills</h2>
 
 <div class="skill">Python
-
 <div class="bar"><div class="progress python"></div></div>
+</div>
 
+<div class="skill">HTML / CSS
+<div class="bar"><div class="progress html"></div></div>
 </div>
 
 <div class="skill">JavaScript
-
 <div class="bar"><div class="progress js"></div></div>
-
 </div>
 
-<div class="skill">HTML/CSS
-
-<div class="bar"><div class="progress html"></div></div>
-
+<div class="skill">SQL
+<div class="bar"><div class="progress sql"></div></div>
 </div>
 
 <div class="skill">Machine Learning
-
 <div class="bar"><div class="progress ml"></div></div>
-
 </div>
 
 </section>
-
-<!-- PROJECTS -->
 
 <section>
 
@@ -339,33 +260,23 @@ Machine Learning Engineer passionate about artificial intelligence, data science
 
 <div class="projects">
 
-<div class="card" data-tilt>
+<div class="card">
 
-<img src="project1.jpg">
+<h3>Plant Health Monitoring System</h3>
 
-<h3>AI Stock Predictor</h3>
-
-<p>ML model predicting stock market patterns.</p>
-
-</div>
-
-<div class="card" data-tilt>
-
-<img src="project2.jpg">
-
-<h3>AI Chatbot</h3>
-
-<p>NLP based chatbot built with Python.</p>
+<p>
+AI system detecting plant diseases using CNN, ResNet and SVM models.
+</p>
 
 </div>
 
-<div class="card" data-tilt>
+<div class="card">
 
-<img src="project3.jpg">
+<h3>X-Ray Pneumonia Detection</h3>
 
-<h3>Portfolio Website</h3>
-
-<p>Futuristic developer portfolio.</p>
+<p>
+Deep learning model detecting pneumonia from chest X-ray images.
+</p>
 
 </div>
 
@@ -373,23 +284,41 @@ Machine Learning Engineer passionate about artificial intelligence, data science
 
 </section>
 
-<!-- CONTACT -->
+<section>
 
-<section id="contact">
+<h2>Certificates</h2>
+
+<a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/internship_certificate.pdf" class="btn">
+Internship Certificate
+</a>
+
+<br><br>
+
+<a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/training_completion_certificate.pdf" class="btn">
+Training Certificate
+</a>
+
+<br><br>
+
+<a href="https://raw.githubusercontent.com/adharsh801/adharsh-portfolio/main/Adharsh_S_Data_Science_Certificate.pdf" class="btn">
+Data Science Internship
+</a>
+
+</section>
+
+<section>
 
 <h2>Contact</h2>
 
-<form>
+<p>Email: adharshs801@gmail.com</p>
+<p>Phone: +91 8618819517</p>
 
-<input placeholder="Your Name">
-
-<input placeholder="Email">
-
-<textarea rows="5" placeholder="Message"></textarea>
-
-<button class="btn">Send Message</button>
-
-</form>
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/adharsh-s-325714240">
+View Profile
+</a>
+</p>
 
 </section>
 
@@ -399,11 +328,13 @@ Machine Learning Engineer passionate about artificial intelligence, data science
 
 </footer>
 
+</div>
+
 <script>
 
-/* TYPING */
+/* typing animation */
 
-const text="AI Engineer | Machine Learning Developer | Full Stack Developer";
+const text="Machine Learning Engineer | AI Developer | Full Stack Developer";
 
 let i=0;
 
@@ -423,7 +354,7 @@ setTimeout(typing,50);
 
 typing();
 
-/* CURSOR */
+/* cursor glow */
 
 const cursor=document.querySelector(".cursor");
 
@@ -434,25 +365,7 @@ cursor.style.top=e.clientY+"px";
 
 });
 
-/* PARTICLES */
-
-particlesJS("particles-js",{
-
-particles:{
-
-number:{value:100},
-
-size:{value:3},
-
-move:{speed:1},
-
-line_linked:{enable:true}
-
-}
-
-});
-
-/* SCROLL REVEAL */
+/* scroll reveal */
 
 const sections=document.querySelectorAll("section");
 
@@ -469,6 +382,44 @@ sec.classList.add("show");
 }
 
 });
+
+});
+
+/* scroll progress */
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop||document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progress").style.width=scrolled+"%";
+
+};
+
+/* neural network background */
+
+VANTA.NET({
+
+el: "body",
+
+mouseControls: true,
+
+touchControls: true,
+
+gyroControls: false,
+
+color: 0x00ffff,
+
+backgroundColor: 0x050510,
+
+points: 10,
+
+maxDistance: 20,
+
+spacing: 18
 
 });
 
