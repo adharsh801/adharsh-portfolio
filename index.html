@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adharsh S | AI Developer</title>
+<title>Adharsh S | AI Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -19,162 +20,251 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0f0f0f;
+
+font-family:'Poppins',sans-serif;
+background:#050510;
 color:white;
 overflow-x:hidden;
+
 }
 
-/* particle background */
+/* PARTICLE BACKGROUND */
 
 #particles-js{
+
 position:fixed;
 width:100%;
 height:100%;
 z-index:-1;
+
 }
 
-/* cursor glow */
+/* CURSOR GLOW */
 
 .cursor{
+
 width:20px;
 height:20px;
+
 border-radius:50%;
+
 background:#00ffff;
+
 position:fixed;
+
 pointer-events:none;
-mix-blend-mode:screen;
-filter:blur(5px);
+
+filter:blur(6px);
+
 }
 
-/* container */
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:40px 0;
-}
-
-/* hero */
+/* HERO */
 
 .hero{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
 text-align:center;
-padding:100px 20px;
+
 }
 
 .hero h1{
-font-size:50px;
+
+font-family:'Orbitron';
+
+font-size:60px;
+
 }
 
 .hero span{
+
 color:#00ffff;
+
 }
 
 .typing{
-margin-top:10px;
-font-size:20px;
-color:#ccc;
+
+margin-top:20px;
+
+font-size:22px;
+
+color:#aaa;
+
 }
 
-/* glass section */
+.btn{
+
+margin-top:25px;
+
+padding:12px 30px;
+
+background:#00ffff;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:black;
+
+font-weight:600;
+
+}
+
+/* SECTIONS */
 
 section{
-margin-top:50px;
+
+width:85%;
+max-width:1100px;
+
+margin:80px auto;
+
 padding:40px;
 
+border-radius:20px;
+
 background:rgba(255,255,255,0.05);
+
 backdrop-filter:blur(20px);
 
-border-radius:20px;
 border:1px solid rgba(255,255,255,0.1);
 
-transition:0.4s;
+opacity:0;
+
+transform:translateY(40px);
+
+transition:0.6s;
+
 }
 
-section:hover{
-transform:translateY(-5px);
+section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
 }
 
-/* skills */
+h2{
+
+font-family:'Orbitron';
+
+margin-bottom:20px;
+
+color:#00ffff;
+
+}
+
+/* SKILLS */
 
 .skill{
+
 margin:15px 0;
+
 }
 
 .bar{
-background:#333;
+
 height:8px;
+
+background:#333;
+
 border-radius:10px;
+
 }
 
 .progress{
+
 height:8px;
+
 border-radius:10px;
+
 }
 
 .python{width:90%;background:#00ffff;}
-.html{width:90%;background:#ff6b6b;}
 .js{width:80%;background:#f7df1e;}
+.html{width:90%;background:#ff5733;}
 .ml{width:85%;background:#8e44ad;}
 
-/* project grid */
+/* PROJECTS */
 
 .projects{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
 gap:25px;
+
 }
 
 .card{
+
 background:rgba(255,255,255,0.05);
-padding:25px;
+
 border-radius:20px;
+
+padding:20px;
+
 border:1px solid rgba(255,255,255,0.1);
+
 }
 
 .card img{
+
 width:100%;
+
 border-radius:15px;
+
 margin-bottom:10px;
+
 }
 
-/* button */
-
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:#00ffff;
-color:black;
-border-radius:30px;
-text-decoration:none;
-}
-
-/* contact */
+/* CONTACT */
 
 form{
+
 display:flex;
+
 flex-direction:column;
+
 gap:15px;
+
 }
 
 input,textarea{
+
 padding:12px;
-border:none;
+
 border-radius:10px;
+
+border:none;
+
 }
 
+/* FOOTER */
+
 footer{
+
 text-align:center;
-margin-top:40px;
+
+margin:40px;
+
 color:#aaa;
+
 }
 
 </style>
+
 </head>
 
 <body>
@@ -183,17 +273,15 @@ color:#aaa;
 
 <div class="cursor"></div>
 
-<div class="container">
-
 <!-- HERO -->
 
 <div class="hero">
 
-<h1>Hi I'm <span>Adharsh S</span></h1>
+<h1>Adharsh <span>S</span></h1>
 
 <p class="typing"></p>
 
-<a class="btn" href="#contact">Hire Me</a>
+<a href="#contact" class="btn">Hire Me</a>
 
 </div>
 
@@ -205,7 +293,7 @@ color:#aaa;
 
 <p>
 
-Machine Learning Intern and Full Stack Developer passionate about AI systems, automation and scalable applications.
+Machine Learning Engineer passionate about artificial intelligence, data science, and building scalable intelligent systems.
 
 </p>
 
@@ -218,19 +306,27 @@ Machine Learning Intern and Full Stack Developer passionate about AI systems, au
 <h2>Skills</h2>
 
 <div class="skill">Python
-<div class="bar"><div class="progress python"></div></div>
-</div>
 
-<div class="skill">HTML/CSS
-<div class="bar"><div class="progress html"></div></div>
+<div class="bar"><div class="progress python"></div></div>
+
 </div>
 
 <div class="skill">JavaScript
+
 <div class="bar"><div class="progress js"></div></div>
+
+</div>
+
+<div class="skill">HTML/CSS
+
+<div class="bar"><div class="progress html"></div></div>
+
 </div>
 
 <div class="skill">Machine Learning
+
 <div class="bar"><div class="progress ml"></div></div>
+
 </div>
 
 </section>
@@ -249,7 +345,7 @@ Machine Learning Intern and Full Stack Developer passionate about AI systems, au
 
 <h3>AI Stock Predictor</h3>
 
-<p>Machine learning system predicting market trends.</p>
+<p>ML model predicting stock market patterns.</p>
 
 </div>
 
@@ -259,7 +355,7 @@ Machine Learning Intern and Full Stack Developer passionate about AI systems, au
 
 <h3>AI Chatbot</h3>
 
-<p>Python chatbot using NLP.</p>
+<p>NLP based chatbot built with Python.</p>
 
 </div>
 
@@ -269,7 +365,7 @@ Machine Learning Intern and Full Stack Developer passionate about AI systems, au
 
 <h3>Portfolio Website</h3>
 
-<p>Modern responsive portfolio design.</p>
+<p>Futuristic developer portfolio.</p>
 
 </div>
 
@@ -281,15 +377,15 @@ Machine Learning Intern and Full Stack Developer passionate about AI systems, au
 
 <section id="contact">
 
-<h2>Contact Me</h2>
+<h2>Contact</h2>
 
-<form id="contact-form">
+<form>
 
-<input type="text" name="name" placeholder="Your Name" required>
+<input placeholder="Your Name">
 
-<input type="email" name="email" placeholder="Your Email" required>
+<input placeholder="Email">
 
-<textarea name="message" rows="5" placeholder="Message"></textarea>
+<textarea rows="5" placeholder="Message"></textarea>
 
 <button class="btn">Send Message</button>
 
@@ -303,11 +399,9 @@ Machine Learning Intern and Full Stack Developer passionate about AI systems, au
 
 </footer>
 
-</div>
-
 <script>
 
-/* typing animation */
+/* TYPING */
 
 const text="AI Engineer | Machine Learning Developer | Full Stack Developer";
 
@@ -329,7 +423,7 @@ setTimeout(typing,50);
 
 typing();
 
-/* cursor glow */
+/* CURSOR */
 
 const cursor=document.querySelector(".cursor");
 
@@ -340,17 +434,17 @@ cursor.style.top=e.clientY+"px";
 
 });
 
-/* particles */
+/* PARTICLES */
 
 particlesJS("particles-js",{
 
 particles:{
 
-number:{value:70},
+number:{value:100},
 
 size:{value:3},
 
-move:{speed:2},
+move:{speed:1},
 
 line_linked:{enable:true}
 
@@ -358,7 +452,7 @@ line_linked:{enable:true}
 
 });
 
-/* scroll reveal */
+/* SCROLL REVEAL */
 
 const sections=document.querySelectorAll("section");
 
@@ -370,22 +464,11 @@ const top=sec.getBoundingClientRect().top;
 
 if(top<window.innerHeight-100){
 
-sec.style.opacity=1;
-sec.style.transform="translateY(0)";
+sec.classList.add("show");
 
 }
 
 });
-
-});
-
-/* emailjs */
-
-document.getElementById("contact-form").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-alert("Message Sent!");
 
 });
 
